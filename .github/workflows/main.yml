@@ -1,10 +1,10 @@
-name: Generate Podcast Feeds
+name: Generate Feed
 on: [push]
 jobs:
-  build:
+  generate-feed:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Run Feed Generator
-        uses: iamhirdeshkumar15/podcast-generator@main
+        uses: iamhirdeshkumar15/podcast-feed-generator@main
